@@ -1,0 +1,532 @@
+{
+    "settings":  {
+                     "adBottomUrl":  "https://dummyimage.com/728x90/0f172a/7c3aed.png\u0026text=DIVINE+ECHOES+ORACLE",
+                     "donateMomoUrl":  "",
+                     "donatePaypalUrl":  "https://paypal.me/"
+                 },
+    "cards":  [
+                  {
+                      "nameEn":  "Absolute Yes",
+                      "nameVn":  "Khẳng Định Tuyệt Đối",
+                      "descriptionEn":  "The answer is a resounding yes. All signs point to immediate success.",
+                      "descriptionVn":  "Câu trả lời là một sự khẳng định chắc chắn. Mọi dấu hiệu đều hướng tới thành công.",
+                      "adviceEn":  "Moving forward is the only logical choice.",
+                      "adviceVn":  "Tiến lên phía trước là lựa chọn hợp lý duy nhất lúc này.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Absolute No",
+                      "nameVn":  "Phủ Định Hoàn Toàn",
+                      "descriptionEn":  "The answer is no. This path will not yield the results you desire.",
+                      "descriptionVn":  "Câu trả lời là một sự phủ định quyết liệt. Con đường này không dành cho bạn.",
+                      "adviceEn":  "Stop now to prevent unnecessary loss of energy.",
+                      "adviceVn":  "Hãy dừng lại ngay để bảo toàn năng lượng cho những mục tiêu khác.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Be Patient",
+                      "nameVn":  "Hãy Kiên Nhẫn",
+                      "descriptionEn":  "The fruits are ripening, but they are not yet ready to be picked.",
+                      "descriptionVn":  "Quả ngọt đang chín dần, nhưng vẫn chưa đến lúc để thu hoạch.",
+                      "adviceEn":  "Wait for the natural cycle to complete. Rushing is a mistake.",
+                      "adviceVn":  "Đợi chu kỳ tự nhiên hoàn tất. Sự vội vã lúc này là một sai lầm.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Action Required Now",
+                      "nameVn":  "Hành Động Ngay",
+                      "descriptionEn":  "The window of opportunity is narrow. Delaying will cause failure.",
+                      "descriptionVn":  "Cửa sổ cơ hội đang mở rất hẹp. Trì hoãn sẽ dẫn tới thất bại.",
+                      "adviceEn":  "Execute your plan immediately without further analysis.",
+                      "adviceVn":  "Thực hiện kế hoạch ngay lập tức, đừng phân tích thêm nữa.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Trust Your Instinct",
+                      "nameVn":  "Tin Vào Trực Giác",
+                      "descriptionEn":  "Your internal sensing is more accurate than any data at this moment.",
+                      "descriptionVn":  "Cảm nhận nội tâm nhạy bén hơn bất kỳ dữ liệu nào vào lúc này.",
+                      "adviceEn":  "Go with the first feeling you had. It was the truth.",
+                      "adviceVn":  "Hãy tin vào cảm giác đầu tiên của bạn. Đó chính là sự thật.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1499209974431-9dac3adaf471?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Seek Counsel",
+                      "nameVn":  "Tìm Người Cố Vấn",
+                      "descriptionEn":  "You are too close to the problem to see the solution clearly.",
+                      "descriptionVn":  "Bạn đang quá gần với vấn đề để có thể nhìn thấy giải pháp rõ ràng.",
+                      "adviceEn":  "Consult a mentor or a trusted friend before deciding.",
+                      "adviceVn":  "Hãy tham khảo ý kiến chuyên gia hoặc người thân trước khi quyết định.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1454165833767-0266b2955733?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Be More Specific",
+                      "nameVn":  "Hãy Cụ Thể Hơn",
+                      "descriptionEn":  "Your request is too vague. The universe needs a clear target.",
+                      "descriptionVn":  "Điều bạn yêu cầu đang quá mơ hồ. Vũ trụ cần một mục tiêu rõ ràng.",
+                      "adviceEn":  "Define exactly what you want and ask the question again.",
+                      "adviceVn":  "Xác định chính xác mong muốn và đặt lại câu hỏi.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Watch and Wait",
+                      "nameVn":  "Quan Sát \u0026 Chờ Đợi",
+                      "descriptionEn":  "Information is still hidden. Visibility is currently low.",
+                      "descriptionVn":  "Thông tin vẫn đang bị ẩn giấu. Tầm nhìn của bạn hiện đang bị hạn chế.",
+                      "adviceEn":  "Observe the movements around you. Don\u0027t engage yet.",
+                      "adviceVn":  "Hãy quan sát những biến động xung quanh. Đừng vội tham gia.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Take The Risk",
+                      "nameVn":  "Dám Mạo Hiểm",
+                      "descriptionEn":  "The path is dangerous but the rewards are significant.",
+                      "descriptionVn":  "Con đường này có rủi ro nhưng phần thưởng đi kèm vô cùng lớn.",
+                      "adviceEn":  "Be brave. Fortune favors those who dare to jump.",
+                      "adviceVn":  "Dũng cảm lên. Vận may chỉ mỉm cười với những người dám bước tới.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1533134486753-c8201f748094?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Let It Go Now",
+                      "nameVn":  "Buông Bỏ Đi",
+                      "descriptionEn":  "Holding on creates suffering. Release is your path to peace.",
+                      "descriptionVn":  "Cố níu kéo chỉ khiến bạn thêm đau khổ. Buông bỏ là con đường bình yên.",
+                      "adviceEn":  "Release the outcome. Freedom is waiting for you.",
+                      "adviceVn":  "Đừng quá kỳ vọng vào kết quả. Sự tự do đang chờ bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Be More Creative",
+                      "nameVn":  "Sáng Tạo Đột Phá",
+                      "descriptionEn":  "Standard methods will only produce standard results.",
+                      "descriptionVn":  "Những cách làm cũ chỉ mang lại những kết quả cũ.",
+                      "adviceEn":  "Break the rules. Find a third way out of the binary choice.",
+                      "adviceVn":  "Phá bỏ quy tắc. Tìm lối đi thứ ba thay vì chỉ chọn A hoặc B.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Choose Reliability",
+                      "nameVn":  "Chọn Sự Ổn Định",
+                      "descriptionEn":  "Don\u0027t be tempted by the flash. The boring option is the safest.",
+                      "descriptionVn":  "Đừng bị cám dỗ bởi những thứ hào nhoáng. Sự ổn định là chìa khóa.",
+                      "adviceEn":  "Go with the trusted source. Safety first in this decision.",
+                      "adviceVn":  "Hãy chọn những nguồn tin cậy. Sự an toàn là ưu tiên hàng đầu.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1544077960-604201fe74bc?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "It Is Certain",
+                      "nameVn":  "Điều Đó Là Chắc Chắn",
+                      "descriptionEn":  "The alignment of events ensures success. Doubt is irrelevant.",
+                      "descriptionVn":  "Mọi sự sắp đặt đều đảm bảo thành công. Mọi hoài nghi là vô nghĩa.",
+                      "adviceEn":  "Move with authority. You already have proof of victory.",
+                      "adviceVn":  "Hãy hành động tự tin. Bạn đã cầm chắc chiến thắng trong tay.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Doubt Reality",
+                      "nameVn":  "Nghi Ngờ Thực Tại",
+                      "descriptionEn":  "What you see is a facade. Behind the screen, things are different.",
+                      "descriptionVn":  "Những gì bạn thấy chỉ là lớp vỏ. Sự thật ẩn giấu tinh vi hơn thế.",
+                      "adviceEn":  "Investigate further. The first appearance is misleading.",
+                      "adviceVn":  "Tìm hiểu kỹ hơn. Vẻ ngoài đầu tiên thường gây nhầm lẫn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Expect A Miracle",
+                      "nameVn":  "Đón Chờ Phép Màu",
+                      "descriptionEn":  "Normal logic cannot account for the help you are about to receive.",
+                      "descriptionVn":  "Lý trí thông thường không thể giải thích sự trợ giúp sắp tới.",
+                      "adviceEn":  "Keep your faith high. The impossible is about to happen.",
+                      "adviceVn":  "Giữ vững đức tin. Những điều không tưởng sắp sửa xảy ra.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Focus On One Goal",
+                      "nameVn":  "Tập Trung Một Đích",
+                      "descriptionEn":  "Multi-tasking is your enemy now. You are spreading too thin.",
+                      "descriptionVn":  "Làm nhiều việc cùng lúc là kẻ thù. Bạn đang bị phân tán quá nhiều.",
+                      "adviceEn":  "Eliminate distractions. Hit one target with maximum force.",
+                      "adviceVn":  "Loại bỏ xao nhãng. Tập trung toàn lực vào một mục tiêu duy nhất.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "The Big Picture",
+                      "nameVn":  "Bức Tranh Toàn Cảnh",
+                      "descriptionEn":  "You are ignoring the long-term cost for a short-term gain.",
+                      "descriptionVn":  "Bạn đang phớt lờ cái giá lâu dài vì một chút lợi ích trước mắt.",
+                      "adviceEn":  "Think five years ahead. Will this choice still matter then?",
+                      "adviceVn":  "Hãy nghĩ cho 5 năm tới. Lựa chọn này liệu lúc đó còn giá trị?",
+                      "imageUrl":  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "No Guarantee",
+                      "nameVn":  "Không Có Gì Đảm Bảo",
+                      "descriptionEn":  "The conditions are unstable. This is a 50/50 toss-up.",
+                      "descriptionVn":  "Các điều kiện hiện tại không ổn định. Lựa chọn này là 50/50.",
+                      "adviceEn":  "Don\u0027t bet what you can\u0027t afford to lose. Be careful.",
+                      "adviceVn":  "Đừng đặt cược thứ mà bạn không thể đánh mất. Cẩn thận.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1510211624479-7dd6adbfdb4c?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "It Worth Attempt",
+                      "nameVn":  "Rất Đáng Để Thử",
+                      "descriptionEn":  "Even if you fail, the lesson will be invaluable for the future.",
+                      "descriptionVn":  "Dù kết quả thế nào, bài học nhận được sẽ vô cùng giá trị.",
+                      "adviceEn":  "Proceed with low expectations but high effort.",
+                      "adviceVn":  "Tiến tới với kỳ vọng thấp nhưng với nỗ lực cao nhất.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1533134486753-c8201f748094?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Speak Your Truth",
+                      "nameVn":  "Nói Ra Sự Thật",
+                      "descriptionEn":  "Silence is being interpreted as agreement with a lie.",
+                      "descriptionVn":  "Sự im lặng của bạn đang bị hiểu nhầm là sự đồng lõa.",
+                      "adviceEn":  "Be vocal. Your voice is the key to resolving this conflict.",
+                      "adviceVn":  "Hãy lên tiếng. Tiếng nói của bạn là chìa khóa để giải quyết việc này.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Keep It Secret",
+                      "nameVn":  "Hãy Giữ Bí Mật",
+                      "descriptionEn":  "Revealing the plan too soon will invite sabotage or envy.",
+                      "descriptionVn":  "Tiết lộ quá sớm sẽ thu hút sự đố kỵ hoặc kẻ phá hoại.",
+                      "adviceEn":  "Cook the idea in silence until it is fully manifest.",
+                      "adviceVn":  "Hãy nuôi dưỡng ý định trong thầm lặng cho đến khi thành hình.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Not Significant",
+                      "nameVn":  "Không Đáng Kể",
+                      "descriptionEn":  "You are stressing over something that won\u0027t matter in a week.",
+                      "descriptionVn":  "Bạn đang lo lắng về một việc mà tuần sau bạn sẽ quên mất.",
+                      "adviceEn":  "Relax. Put your energy into a more productive area.",
+                      "adviceVn":  "Thư giãn đi. Hãy dành năng lượng cho những việc hữu ích hơn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Follow The Lead",
+                      "nameVn":  "Đi Theo Người Dẫn Đầu",
+                      "descriptionEn":  "There is a path already cleared for you. Don\u0027t waste time.",
+                      "descriptionVn":  "Con đường đã được dọn sẵn. Đừng lãng phí thời gian tự đào lối mới.",
+                      "adviceEn":  "Follow the traces of those who succeeded before you.",
+                      "adviceVn":  "Hãy đi theo dấu vết của những người đã thành công đi trước.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Move On Now",
+                      "nameVn":  "Bỏ Lại Quá Khứ",
+                      "descriptionEn":  "You have taken all you can from this situation. It is dead now.",
+                      "descriptionVn":  "Bạn đã học đủ từ bài học này rồi. Nó không còn gì cho bạn nữa.",
+                      "adviceEn":  "Don\u0027t look back. The next chapter is far more interesting.",
+                      "adviceVn":  "Đừng nhìn lại. Chương tiếp theo sẽ thú vị hơn nhiều.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Act As Master",
+                      "nameVn":  "Hành Xử Như Minh Chủ",
+                      "descriptionEn":  "Wait for no one. You already have the power to create the reality.",
+                      "descriptionVn":  "Đừng chờ đợi ai. Bạn đã đủ sức tự tạo ra thực tại của riêng mình.",
+                      "adviceEn":  "Body the success you want to see. Confidence is the key.",
+                      "adviceVn":  "Hãy sống như thể bạn đã thành công. Sự tự tin là chìa khóa.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1533134486753-c8201f748094?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Better Wait Offer",
+                      "nameVn":  "Đợi Lời Đề Nghị Tốt Hơn",
+                      "descriptionEn":  "The first offer is a test of your patience. There is more coming.",
+                      "descriptionVn":  "Lời đề nghị đầu tiên chỉ là phép thử. Những thứ tốt hơn đang tới.",
+                      "adviceEn":  "Hold out. You deserve a higher value than what is on the table.",
+                      "adviceVn":  "Hãy chờ đợi. Bạn xứng đáng với giá trị cao hơn thế.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Obvious Sign Found",
+                      "nameVn":  "Dấu Hiệu Hiển Nhiên",
+                      "descriptionEn":  "Look at the repetitive coincidences. They are not random.",
+                      "descriptionVn":  "Hãy nhìn những sự trùng hợp. Chúng vốn không hề ngẫu nhiên.",
+                      "adviceEn":  "Trust the pattern. The universe is speaking directly to you.",
+                      "adviceVn":  "Tin vào quy luật. Vũ trụ đang nói chuyện trực tiếp với bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Glad You Did It",
+                      "nameVn":  "Tự Hào Vì Đã Làm",
+                      "descriptionEn":  "In ten days, this choice will feel like the smartest move ever.",
+                      "descriptionVn":  "Trong vài ngày tới, bạn sẽ thấy đây là quyết định sáng suốt nhất.",
+                      "adviceEn":  "Push through the doubt. Victory is waiting on the other side.",
+                      "adviceVn":  "Vượt qua hoài nghi. Chiến thắng đang đợi bạn ở phía bên kia.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Prepare Exit",
+                      "nameVn":  "Chuẩn Bị Rút Lui",
+                      "descriptionEn":  "Winning is no longer possible in this scenario. Cut your losses.",
+                      "descriptionVn":  "Chiến thắng không còn khả thi lúc này. Hãy chủ động cắt lỗ.",
+                      "adviceEn":  "Walk away while you still have your resources intact.",
+                      "adviceVn":  "Rời đi khi bạn vẫn còn giữ được nguồn lực của mình.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1542125387-c71274d94f0a?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Invest Your Time",
+                      "nameVn":  "Đầu Tư Thời Gian",
+                      "descriptionEn":  "Money is not the issue here. Dedication and presence are required.",
+                      "descriptionVn":  "Tâm sức và thời gian mới là thứ thực sự cần thiết ngay lúc này.",
+                      "adviceEn":  "Put in the hours. Sweat equity will bring the result you want.",
+                      "adviceVn":  "Hãy dành thời gian cho nó. Sự nỗ lực sẽ mang lại kết quả.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1508962914676-13942500ad5d?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "The Finish Line",
+                      "nameVn":  "Về Đích",
+                      "descriptionEn":  "This cycle is completing. A major release of energy is coming.",
+                      "descriptionVn":  "Chu kỳ này đang hoàn tất. Sự bùng nổ năng lượng sắp cận kề.",
+                      "adviceEn":  "Stay focused until the very end. Don\u0027t relax yet.",
+                      "adviceVn":  "Tập trung cho tới giây phút cuối cùng. Đừng vội nới lỏng.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Maybe Later",
+                      "nameVn":  "Có Thể Sau Này",
+                      "descriptionEn":  "The energy is not aligned for a \u0027Yes\u0027 or \u0027No\u0027 today.",
+                      "descriptionVn":  "Năng lượng hôm nay không phù hợp để trả lời dứt khoát.",
+                      "adviceEn":  "Check back in a week. The stars will shift by then.",
+                      "adviceVn":  "Hãy kiểm tra lại sau một tuần. Lúc đó mọi thứ sẽ khác.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1499209974431-9dac3adaf471?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Heart Over Head",
+                      "nameVn":  "Để Con Tim Lên Tiếng",
+                      "descriptionEn":  "Your logic is cold and misses the human element of this choice.",
+                      "descriptionVn":  "Lý trí của bạn đang quá lạnh lùng. Hãy lắng nghe nhịp đập trái tim.",
+                      "adviceEn":  "Choose the path that makes your heart beat faster.",
+                      "adviceVn":  "Hãy chọn con đường khiến bạn cảm thấy hạnh phúc nhất.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Avoid Shortcuts",
+                      "nameVn":  "Tránh Đường Tắt",
+                      "descriptionEn":  "The quick fix will break in three months. Do it right first.",
+                      "descriptionVn":  "Cách làm nhanh chỉ là đối phó. Hãy làm đúng ngay từ đầu.",
+                      "adviceEn":  "Follow the long, standard procedure for lasting success.",
+                      "adviceVn":  "Làm theo quy trình chuẩn để có thành công bền vững.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Trust The Friend",
+                      "nameVn":  "Tin Vào Bạn Thân",
+                      "descriptionEn":  "Someone close has a better view of the situation than you.",
+                      "descriptionVn":  "Ai đó bên cạnh bạn đang thấy rõ vấn đề hơn chính bạn.",
+                      "adviceEn":  "Ask your best friend what they would do in your shoes.",
+                      "adviceVn":  "Hỏi người bạn thân nhất xem họ sẽ làm gì nếu là bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Change Your View",
+                      "nameVn":  "Thay Đổi Góc Nhìn",
+                      "descriptionEn":  "You are looking at the problem from a position of lack.",
+                      "descriptionVn":  "Bạn đang nhìn vấn đề từ vị thế thiếu thốn. Hãy đổi góc nhìn khác.",
+                      "adviceEn":  "Flip the script. How would an abundant person solve this?",
+                      "adviceVn":  "Nếu bạn đang có mọi thứ, bạn sẽ xử lý việc này thế nào?",
+                      "imageUrl":  "https://images.unsplash.com/photo-1503264116251-35a269479413?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Relax The Grip",
+                      "nameVn":  "Nới Lỏng Kiểm Soát",
+                      "descriptionEn":  "Trying to control everything is exactly what\u0027s causing the block.",
+                      "descriptionVn":  "Cố kiểm soát mọi thứ chính là nguyên nhân gây tắc nghẽn.",
+                      "adviceEn":  "Surrender to the flow. The universe knows a shortcut.",
+                      "adviceVn":  "Hãy thuận theo tự nhiên. Vũ trụ biết lối tắt mà bạn không thấy.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Victory Is Near",
+                      "nameVn":  "Chiến Thắng Rất Gần",
+                      "descriptionEn":  "You are on the final stretch of a long marathon.",
+                      "descriptionVn":  "Bạn đang ở những mét cuối cùng của cuộc marathon dài.",
+                      "adviceEn":  "Don\u0027t stop now. Give it one last final push.",
+                      "adviceVn":  "Đừng dừng lại. Hãy tung ra cú hích cuối cùng để về đích.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1533134486753-c8201f748094?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Accept Discipline",
+                      "nameVn":  "Chấp Nhận Kỷ Luật",
+                      "descriptionEn":  "Your talent is being wasted due to a lack of routine.",
+                      "descriptionVn":  "Tài năng của bạn đang bị lãng phí vì thiếu sự nề nếp.",
+                      "adviceEn":  "Build a structure. Freedom comes through discipline.",
+                      "adviceVn":  "Xây dựng thói quen. Tự do chỉ đến từ sự kỷ luật.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Be Courageous",
+                      "nameVn":  "Hãy Cứ Dũng Cảm",
+                      "descriptionEn":  "The shadow you see is just a paper tiger. It won\u0027t bite.",
+                      "descriptionVn":  "Cái bóng bạn thấy thực chất chỉ là một con hổ giấy.",
+                      "adviceEn":  "Step into the unknown with your head held high.",
+                      "adviceVn":  "Bước vào chốn hư vô với tâm thế ngẩng cao đầu.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Evaluate Again",
+                      "nameVn":  "Hãy Đánh Giá Lại",
+                      "descriptionEn":  "New information just arrived. Yesterday\u0027s choice is obsolete.",
+                      "descriptionVn":  "Thông tin mới vừa tới. Lựa chọn cũ giờ đã không còn phù hợp.",
+                      "adviceEn":  "Suspend action. Review the new data immediately.",
+                      "adviceVn":  "Tạm dừng hành động. Xem xét lại các dữ liệu mới ngay.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1508962914676-13942500ad5d?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "It A Promise",
+                      "nameVn":  "Lời Hứa Định Mệnh",
+                      "descriptionEn":  "Trust the bond you have with the person involved.",
+                      "descriptionVn":  "Hãy tin vào mối liên kết sâu sắc giữa bạn và đối phương.",
+                      "adviceEn":  "Keep your side of the bargain. They will do the same.",
+                      "adviceVn":  "Hãy giữ đúng lời hứa. Họ cũng sẽ làm như vậy.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1515509339656-d88d71213d56?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Follow The Music",
+                      "nameVn":  "Đi Theo Tiếng Nhạc",
+                      "descriptionEn":  "Joy is the target. If it doesn\u0027t feel fun, it\u0027s not the answer.",
+                      "descriptionVn":  "Niềm vui là đích đến. Nếu việc này không đem lại niềm vui, hãy bỏ qua.",
+                      "adviceEn":  "Choose the path that brings the most laughter and ease.",
+                      "adviceVn":  "Chọn con đường mang lại tiếng cười và sự thư thái nhất.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Stay The Course",
+                      "nameVn":  "Giữ Vững Lộ Trình",
+                      "descriptionEn":  "Small distractions are trying to derail a great outcome.",
+                      "descriptionVn":  "Những xao nhãng nhỏ đang cố làm chệch hướng thành quả lớn.",
+                      "adviceEn":  "Keep your eyes on the horizon. Don\u0027t turn left or right.",
+                      "adviceVn":  "Giữ mắt hướng về phía chân trời. Tuyệt đối đừng rẽ ngang.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Listen To Teachers",
+                      "nameVn":  "Lắng Nghe Tiền Bối",
+                      "descriptionEn":  "Humility allows wisdom to enter. You don\u0027t have to wing it.",
+                      "descriptionVn":  "Sự khiêm nhường mở lối cho trí tuệ. Đừng cố gồng gánh một mình.",
+                      "adviceEn":  "Seek advice from those who have walked this path for decades.",
+                      "adviceVn":  "Tìm lời khuyên từ những người đi trước giàu kinh nghiệm.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1454165833767-0266b2955733?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Investigate More",
+                      "nameVn":  "Tìm Hiểu Kỹ Hơn",
+                      "descriptionEn":  "Surface level understanding will lead to a shallow result.",
+                      "descriptionVn":  "Sự hiểu biết hời hợt sẽ chỉ dẫn tới những kết quả không bền vững.",
+                      "adviceEn":  "Dive deeper. Look for what is NOT being said.",
+                      "adviceVn":  "Đào sâu hơn nữa. Hãy chú ý cả những điều không được nói ra.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "A Year From Now",
+                      "nameVn":  "Một Năm Sau",
+                      "descriptionEn":  "Your perspective will be completely different in 12 months.",
+                      "descriptionVn":  "Cái nhìn của bạn sẽ thay đổi hoàn toàn sau 12 tháng nữa.",
+                      "adviceEn":  "Be patient. Time is the ingredient you are currently missing.",
+                      "adviceVn":  "Hãy kiên nhẫn. Thời gian là thứ duy nhất bạn đang thiếu.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Unlikely",
+                      "nameVn":  "Ít Có Khả Năng",
+                      "descriptionEn":  "The current conditions do not support the desired ending.",
+                      "descriptionVn":  "Các điều kiện hiện tại không ủng hộ cho một cái kết như ý.",
+                      "adviceEn":  "Adjust your expectations or change your strategy entirely.",
+                      "adviceVn":  "Điều chỉnh kỳ vọng hoặc thay đổi chiến thuật ngay lập tức.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1510211624479-7dd6adbfdb4c?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Abundance",
+                      "nameVn":  "Sự Trù Phú",
+                      "descriptionEn":  "The floodgates are opening. Prepare to receive more than asked.",
+                      "descriptionVn":  "Cánh cửa dẫn tới sự trù phú đang mở. Hãy sẵn sàng đón nhận niềm vui.",
+                      "adviceEn":  "Gratitude attracts more of what you already enjoy.",
+                      "adviceVn":  "Lòng biết ơn sẽ thu hút thêm nhiều sự thịnh vượng đến với bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Soul Searching",
+                      "nameVn":  "Lắng Nghe Linh Hồn",
+                      "descriptionEn":  "The answer is not outside. It is in the silence within you.",
+                      "descriptionVn":  "Câu trả lời không nằm ở bên ngoài. Nó nằm ở tĩnh lặng bên trong bạn.",
+                      "adviceEn":  "Spend time alone. Your soul has its own navigation system.",
+                      "adviceVn":  "Dành thời gian ở một mình. Linh hồn bạn có lối dẫn đường riêng.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Prioritize Joy",
+                      "nameVn":  "Ưu Tiên Niềm Vui",
+                      "descriptionEn":  "Stress is a choice. You can decide to follow the joy instead.",
+                      "descriptionVn":  "Căng thẳng là một sự lựa chọn. Bạn hoàn toàn có thể chọn niềm vui.",
+                      "adviceEn":  "Scale back on obligations that drain your spirit.",
+                      "adviceVn":  "Cắt bớt những trách nhiệm đang rút cạn tinh thần của bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Ask Your Heart",
+                      "nameVn":  "Hỏi Lấy Trái Tim",
+                      "descriptionEn":  "You are overthinking things into a state of paralysis.",
+                      "descriptionVn":  "Bạn đang suy nghĩ quá nhiều đến mức không thể nhúc nhích.",
+                      "adviceEn":  "Put down the pros and cons list. What do you REALLY want?",
+                      "adviceVn":  "Hãy bỏ bảng so sánh xuống. Con tim bạn thực sự muốn gì?",
+                      "imageUrl":  "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Success Is Guaranteed",
+                      "nameVn":  "Thắng Lợi Được Đảm Bảo",
+                      "descriptionEn":  "There is no doubt left. The universe has signed the contract.",
+                      "descriptionVn":  "Không còn nghi ngờ gì nữa. Vũ trụ đã ký tên vào bản thắng lợi của bạn.",
+                      "adviceEn":  "Enjoy the process. The victory is already yours.",
+                      "adviceVn":  "Tận hưởng hành trình này. Chiến thắng đã thuộc về bạn.",
+                      "imageUrl":  "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80\u0026w=800\u0026auto=format\u0026fit=crop"
+                  },
+                  {
+                      "nameEn":  "Disappointing Results",
+                      "nameVn":  "Kết Quả Gây Thất Vọng",
+                      "descriptionEn":  "You might get what you asked for, but not in the way you wanted.",
+                      "descriptionVn":  "Bạn có thể nhận được thứ mình muốn, nhưng theo cách không ngờ nhất.",
+                      "adviceEn":  "Re-evaluate your goal. Is this truly what you need?",
+                      "adviceVn":  "Đánh giá lại mục tiêu. Đây có thực sự là thứ bạn cần không?",
+                      "imageUrl":  "https://images.unsplash.com/photo-1542125387-c71274d94f0a?q=80&w=800&auto=format&fit=crop"
+                  },
+                  {
+                      "adviceEn":  "Smooth out the rough edges. Harmony is more important than being right.",
+                      "descriptionVn":  "Căng thẳng tồn tại do thiếu sự cân bằng. Hãy tìm điểm chung.",
+                      "descriptionEn":  "Tension exists because of a lack of balance. Seek the middle ground.",
+                      "imageUrl":  "/images/oracle/card_harmony.png",
+                      "nameEn":  "Look For Harmony",
+                      "nameVn":  "Tìm Sự Hòa Hợp",
+                      "adviceVn":  "Hãy làm dịu những mâu thuẫn. Sự hòa hợp quan trọng hơn việc ai đúng ai sai."
+                  },
+                  {
+                      "adviceEn":  "Pull back. Silence will provide the clarity that communication cannot.",
+                      "descriptionVn":  "Kênh truyền tin đang quá nhiều. Bạn cần tạm rời xa để nghe được rõ ràng hơn.",
+                      "descriptionEn":  "The channel is noisy. You need to distance yourself to hear clearly.",
+                      "imageUrl":  "/images/oracle/card_disconnect.png",
+                      "nameEn":  "End Direct Connection",
+                      "nameVn":  "Ngắt Kết Nối Trực Tiếp",
+                      "adviceVn":  "Hãy rút lui. Sự tĩnh lặng sẽ mang lại sự sáng suốt mà giao tiếp không thể làm được."
+                  },
+                  {
+                      "adviceEn":  "Keep a notebook nearby. The best ideas come when you least expect them.",
+                      "descriptionVn":  "Một tia sáng trí tuệ sắp lóe lên. Hãy sẵn sàng để nắm bắt nó.",
+                      "descriptionEn":  "A flash of insight is about to strike. Be ready to capture it.",
+                      "imageUrl":  "/images/oracle/card_inspiration.png",
+                      "nameEn":  "Sudden Inspiration",
+                      "nameVn":  "Cảm Hứng Bất Ngờ",
+                      "adviceVn":  "Hãy giữ sổ tay bên mình. Những ý tưởng tốt nhất sẽ đến khi bạn ít mong đợi nhất."
+                  },
+                  {
+                      "adviceEn":  "Nurture the small steps. Consistency will turn them into a legacy.",
+                      "descriptionVn":  "Cây sồi khổng lồ bắt đầu từ hạt mầm nhỏ. Đừng coi thường những bước khởi đầu.",
+                      "descriptionEn":  "The giant oak starts as a tiny seed. Don't despise the small start.",
+                      "imageUrl":  "/images/oracle/card_small_start.png",
+                      "nameEn":  "Small Beginnings",
+                      "nameVn":  "Khởi Đầu Nhỏ Bé",
+                      "adviceVn":  "Hãy nuôi dưỡng những bước đi nhỏ. Sự kiên trì sẽ biến chúng thành di sản."
+                  }
+              ]
+}
+// @AGENT_MODIFIED: 2026-04-22T02:00:00Z | Agent 4 | Reason: Repaired corrupted Vietnamese encoding in content_oracle.json | Tag: #fix #data

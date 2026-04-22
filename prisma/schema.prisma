@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Card {
+  id            String   @id @default(cuid())
+  nameEn        String
+  nameVn        String
+  descriptionEn String
+  descriptionVn String
+  adviceEn      String
+  adviceVn      String
+  imageUrl      String? // Dành cho hinh ảnh thẻ bài
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Setting {
+  key   String @id
+  value String
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  eventName String   // e.g., 'SHARE', 'PULSE'
+  variant   String   // 'A' or 'B'
+  userId    String   // anonymous persistent ID from localStorage
+  createdAt DateTime @default(now())
+}
+
+// @AGENT_MODIFIED: 2026-04-20T22:45:00Z | Agent 4 | Reason: Added AnalyticsEvent model for Agent 5 Telemetry | Tag: #db #analytics
+
+// @AGENT_MODIFIED: 2026-04-20T12:47:00Z | Agent 4 | Reason: Restored schema.prisma | Tag: #db

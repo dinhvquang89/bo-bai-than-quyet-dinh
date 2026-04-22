@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-mystic-void: #0B0C10;
+  --color-mystic-surface: #1A1C23;
+  --color-royal-nebula: #4A0E4E;
+  --color-royal-nebula-light: #8A2BE2;
+  --color-ancient-gold: #D4AF37;
+  --color-ancient-gold-light: #F3E5AB;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+  --font-mystic: var(--font-marcellus), serif;
+}
+
+:root {
+  --background: var(--color-mystic-void);
+  --foreground: #ededed;
+}
+
+body {
+  background-color: #020617; /* bg-slate-950 */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(to bottom, #020617, #020617);
+  background-attachment: fixed;
+  min-height: 100vh;
+  transition: background-color 1s ease-in-out, filter 1s ease-in-out;
+}
+
+body.theme-negative {
+  background-color: #020005;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), radial-gradient(circle at top, rgba(60, 5, 15, 0.8) 0%, rgba(5, 0, 5, 1) 50%);
+}
+
+body.theme-positive {
+  background-color: #08112e;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'), radial-gradient(circle at top, rgba(212, 175, 55, 0.2) 0%, rgba(8, 17, 46, 1) 70%);
+}
+
+/* Advanced Glassmorphism utility */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+.text-mystic-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Custom Scrollbar for Cards */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+.expanded-card-shadow {
+  box-shadow: 0 0 60px rgba(212, 175, 55, 0.15), 0 0 120px rgba(74, 14, 78, 0.2);
+}
+
+/* Agent tracking */
+/* @AGENT_MODIFIED: 2026-04-20T13:00:00Z | Antigravity | Reason: Updated global theme | Tag: #ui #css */
