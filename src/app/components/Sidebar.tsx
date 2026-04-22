@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
         <p className="text-[11px] text-slate-100 leading-relaxed font-medium">
           {lang === 'vn' 
             ? <>Nếu bạn rút phải lá bài không tốt lành hoặc tâm lý đang không ổn định, hãy bình tĩnh: <br /><br /> chăm sóc sức khỏe, làm việc tốt và quay lại vào một ngày khác - <br /><br /> không có nghiệp quả nào là không thể thay đổi!</> 
-            : 'If you draw an unfavorable card or feel mentally unstable, stay calm: <br /><br /> take care of your health, do good deeds, and return another day - <br /><br /> no karma is unchangeable!'}
+            : <>If you draw an unfavorable card or feel mentally unstable, stay calm: <br /><br /> take care of your health, do good deeds, and return another day - <br /><br /> no karma is unchangeable!</>}
         </p>
       </div>
 
@@ -35,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
         <p className="text-[11px] text-slate-200 leading-relaxed mb-3 font-medium">
           {lang === 'vn' 
             ? <>Mọi thông điệp đều hoàn toàn miễn phí. <br /><br /> Nếu Thông Điệp Vũ Trụ giúp bạn có thêm niềm vui hoặc tránh được vận rủi hôm nay, hãy giúp chúng mình một tách cà phê để duy trì máy chủ nhé. <br /><br /> Chúng mình biết ơn bạn rất nhiều! ❤️</> 
-            : 'All messages are completely free. <br /><br /> If Cosmic Whispers helps you have more joy or avoid bad luck today, please help us with a cup of coffee to maintain the server. <br /><br /> We are very grateful to you! ❤️'}
+            : <>All messages are completely free. <br /><br /> If Celestial Whispers helps you have more joy or avoid bad luck today, please help us with a cup of coffee to maintain the server. <br /><br /> We are very grateful to you! ❤️</>}
         </p>
 
         {settings.donateMomoUrl ? (

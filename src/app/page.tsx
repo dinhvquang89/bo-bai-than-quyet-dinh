@@ -58,7 +58,7 @@ export default function Home() {
           <h1 className="text-[clamp(2rem,10vw,3.5rem)] font-mystic font-bold text-transparent bg-clip-text bg-gradient-to-r from-ancient-gold via-white to-ancient-gold drop-shadow-[0_2px_15px_rgba(212,175,55,0.4)] mb-1 md:mb-2 relative leading-tight tracking-tight px-2">
             {lang === 'vn' ? 'Thông Điệp Vũ Trụ' : 'Celestial Whispers'}
           </h1>
-          <p className="text-slate-300 max-w-lg mx-auto mb-4 md:mb-6 text-[10px] md:text-sm px-6 opacity-90 leading-relaxed font-medium tracking-wide">
+          <p className="text-slate-300 max-w-2xl mx-auto mb-4 md:mb-6 text-[10px] md:text-sm px-6 opacity-90 leading-relaxed font-medium tracking-wide">
             {lang === 'vn' ? '✧ Lắng nghe thông điệp từ vũ trụ trước những ngã rẽ cuộc đời ✧' : '✧ Listen to the messages of the universe before the crossroads of life ✧'}
           </p>
 
