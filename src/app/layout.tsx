@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display, Marcellus } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
@@ -22,6 +24,8 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} ${marcellus.variable} font-sans antialiased bg-mystic-void text-white min-h-screen flex flex-col`}>
         <LanguageProvider>
           {children}
+          <SpeedInsights />
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>
