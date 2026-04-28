@@ -147,9 +147,20 @@ export default function Home() {
             {(settings.donateMomoUrl || settings.donatePaypalUrl) ? (
               <div className="space-y-6 text-center">
                 {settings.donateMomoUrl && (
-                  <div className="bg-slate-800 p-4 rounded-xl">
-                    <p className="mb-2 text-sm text-slate-300 font-medium">MOMO E-Wallet</p>
-                    <img src={settings.donateMomoUrl} alt="Momo QR" className="w-48 h-48 mx-auto rounded bg-white p-2 object-cover" />
+                  <div className="bg-slate-800 p-4 rounded-xl flex flex-col items-center gap-3">
+                    <p className="mb-1 text-sm text-slate-300 font-medium">
+                      {lang === 'vn' ? 'Chuyển Khoản VietQR / MOMO' : 'VietQR / MOMO Transfer'}
+                    </p>
+                    <img src={settings.donateMomoUrl} alt="VietQR Momo" className="w-48 h-48 rounded bg-white p-2 object-cover shadow-inner" />
+                    
+                    {/* Nút tải ảnh QR trên mobile */}
+                    <a 
+                      href={settings.donateMomoUrl} 
+                      download="vietqr_momo.png" 
+                      className="md:hidden flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-amber-950 font-bold text-xs rounded-full transition-all shadow-md"
+                    >
+                      📥 {lang === 'vn' ? 'Lưu / Tải ảnh QR' : 'Save QR Image'}
+                    </a>
                   </div>
                 )}
                 {settings.donatePaypalUrl && (
@@ -199,5 +210,6 @@ export default function Home() {
 // @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive design for mobile (viewport & lazy-loading) | Tag: #performance
 // @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 0 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
 // @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 0 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
+// @AGENT_MODIFIED: 2026-04-28T22:45:00Z | Agent 0 | Reason: Added QR Donate download button and filled MOMO QR slot | Tag: #ui #monetization
 
 // @TRIGGER_BUILD: 2026-04-28T21:53:00Z
