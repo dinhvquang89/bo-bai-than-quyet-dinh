@@ -47,7 +47,7 @@ export default function Home() {
     <main className="min-h-dvh bg-transparent flex flex-col items-center py-2 md:py-10 px-4 relative overflow-x-hidden">
       
       {/* Top Header: Chỉ hiển thị Ngôn ngữ trên Mobile/PC */}
-      <div className="absolute top-6 right-6 md:right-10 flex items-center gap-3 z-20 justify-end">
+      <div className="w-full flex justify-end z-20 mb-4 md:absolute md:top-6 md:right-10 md:w-auto md:mb-0">
         <div className="flex bg-slate-800 rounded text-xs md:text-sm font-bold overflow-hidden shadow-lg border border-white/5">
           <button onClick={() => setLang('vn')} className={`px-2 md:px-3 py-1 ${lang === 'vn' ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-white transition'}`}>
             VN
@@ -123,10 +123,6 @@ export default function Home() {
               <Heart className="w-4 h-4 fill-current" /> {lang === 'vn' ? 'Ủng hộ dự án' : 'Support Us'}
             </button>
           </div>
-
-          <div className="mt-20 border-t border-slate-800 pt-8 pb-20 md:hidden w-full">
-            <Disclaimer />
-          </div>
         </div>
 
         {/* Cột phải: Sidebar (Chỉ hiện trên PC) */}
@@ -171,18 +167,26 @@ export default function Home() {
         </div>
       )}
 
-      {/* Bottom Footer: Copyright - Chuyển sang bình thường (không fixed) */}
-      <div className="w-full bg-slate-900/60 border-t border-slate-800 flex flex-col items-center justify-center mt-auto z-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]">
-         <div className="w-[95%] md:w-[80%] bg-slate-950/80 py-4 px-6 text-center select-none backdrop-blur-sm rounded-t-2xl border-x border-t border-white/5" onContextMenu={(e) => e.preventDefault()}>
-           <h5 className="text-[10px] text-amber-500 font-black tracking-[0.2em] uppercase mb-2 border-b border-white/5 pb-1 inline-block">
-             {lang === 'vn' ? 'Copyright Notice' : 'Copyright Notice'}
-           </h5>
-           <p className="text-[9px] md:text-[10px] text-slate-200 leading-relaxed mb-3 max-w-3xl mx-auto px-4 lg:px-0 font-medium">
+      {/* Bottom Footer: Disclaimer & Copyright Notice */}
+      <div className="w-full bg-slate-900/60 border-t border-slate-800 flex flex-col items-center justify-center mt-12 z-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] select-none" onContextMenu={(e) => e.preventDefault()}>
+         <div className="w-[95%] md:w-[80%] bg-slate-950/80 py-6 px-6 text-center backdrop-blur-sm rounded-t-2xl border-x border-t border-white/5">
+           
+           {/* Tuyên bố trách nhiệm */}
+           <p className="text-[10px] text-amber-500/90 leading-relaxed mb-4 max-w-3xl mx-auto px-4 font-medium">
+             <span className="font-black uppercase tracking-wider">{lang === 'vn' ? '⚠️ Tuyên bố Trách nhiệm: ' : '⚠️ Disclaimer: '}</span>
+             {lang === 'vn' 
+               ? 'Hệ thống Thông Điệp Vũ Trụ này cung cấp định hướng tinh thần và tham khảo giải trí. Nếu bạn rút phải lá bài mang nội dung nhạy cảm hoặc tâm lý đang không ổn định, hãy bình tĩnh quay lại vào một ngày khác - không có nghiệp quả nào là không thể thay đổi.' 
+               : 'This Celestial Whispers system provides spiritual guidance and entertainment. If you draw a sensitive card or feel mentally unstable, please stay calm and come back another day - no karma is unchangeable.'}
+           </p>
+
+           {/* Copyright Notice */}
+           <p className="text-[9px] text-slate-400 leading-relaxed mb-3 max-w-3xl mx-auto px-4 font-normal border-t border-white/5 pt-3">
              {lang === 'vn' 
                ? 'Kiến thức gốc (Tarot/Lenormand) được tổng hợp dưới dạng Tự do (Public Domain/Fair Use). Các yếu tố Đồ họa 3D, Cấu trúc nội dung, và Mã nguồn thuộc tác quyền độc lập của Thông Điệp Vũ Trụ. Mọi hành vi sao chép không xin phép đều bị nghiêm cấm theo luật DMCA.' 
                : 'Original framework (Tarot/Lenormand) compiled under Public Domain/Fair Use. Core 3D Graphics, Content Structures, and Source Code are proprietary to Celestial Whispers. Unauthorized duplication is strictly prohibited under DMCA.'}
            </p>
-           <p className="text-[10px] text-slate-400 tracking-wider font-bold italic">
+
+           <p className="text-[10px] text-slate-500 tracking-wider font-bold italic">
              © 2026 {lang === 'vn' ? 'THÔNG ĐIỆP VŨ TRỤ' : 'CELESTIAL WHISPERS'}. ALL RIGHTS RESERVED.
            </p>
          </div>
@@ -193,5 +197,7 @@ export default function Home() {
 
 // @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Enhanced Copyright text visibility | Tag: #ui #legal
 // @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive design for mobile (viewport & lazy-loading) | Tag: #performance
+// @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 0 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
+// @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 0 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
 
 // @TRIGGER_BUILD: 2026-04-28T21:53:00Z
