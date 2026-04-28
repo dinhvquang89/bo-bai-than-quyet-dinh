@@ -4,12 +4,13 @@ import CardFlip from "./components/CardFlip";
 import Disclaimer from "./components/Disclaimer";
 import Sidebar from "./components/Sidebar";
 import { useLanguage } from "./contexts/LanguageContext";
-import { Heart, X } from "lucide-react";
+import { Heart, X, Sparkles } from "lucide-react";
 import contentData from "../data/content.json";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();
   const [showDonate, setShowDonate] = useState(false);
+  const [affiliateProduct, setAffiliateProduct] = useState(contentData.affiliateProducts[0]);
 
   // Agent 5 Tracking: Daily Pulse for Retention
   useEffect(() => {
@@ -30,13 +31,20 @@ export default function Home() {
     };
     // Delay slightly to ensure localStorage is set by CardFlip if new user
     setTimeout(trackPulse, 1000);
+
+    // Pick random affiliate product
+    const products = contentData.affiliateProducts;
+    if (products && products.length > 0) {
+      const randomIndex = Math.floor(Math.random() * products.length);
+      setAffiliateProduct(products[randomIndex]);
+    }
   }, []);
   
   // Nạp 100% Cài đặt từ Static JSON file
   const settings = contentData.settings;
 
   return (
-    <main className="min-h-screen bg-transparent flex flex-col items-center py-2 md:py-10 px-4 relative overflow-x-hidden">
+    <main className="min-h-dvh bg-transparent flex flex-col items-center py-2 md:py-10 px-4 relative overflow-x-hidden">
       
       {/* Top Header: Chỉ hiển thị Ngôn ngữ trên Mobile/PC */}
       <div className="absolute top-6 right-6 md:right-10 flex items-center gap-3 z-20 justify-end">
@@ -64,19 +72,46 @@ export default function Home() {
 
           <CardFlip />
 
-          {/* Advertisement Area (Green Area on PC) */}
-          <div className="hidden md:block w-full max-w-4xl mt-12 mb-8">
-            <div className="glass-panel p-4 rounded-3xl border border-white/10 bg-slate-900/40 shadow-xl min-h-[90px] flex items-center justify-center relative overflow-hidden group">
-              {settings.adBottomUrl ? (
-                <img 
-                  src={settings.adBottomUrl} 
-                  alt="Ads" 
-                  className="w-full h-full max-h-[120px] object-contain opacity-80 group-hover:opacity-100 transition-opacity"
-                />
-              ) : (
-                <span className="text-[10px] text-slate-700 tracking-[0.2em] font-bold">ADVERTISEMENT SPACE</span>
-              )}
-            </div>
+          {/* Advertisement Area (Shopee Affiliate Banner) */}
+          <div className="hidden md:block w-full max-w-3xl mt-12 mb-8">
+            <a 
+              href={affiliateProduct?.url || settings.shopeeAffiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-panel p-6 rounded-3xl border border-white/10 bg-slate-900/60 shadow-2xl flex items-center justify-between relative overflow-hidden group hover:border-ancient-gold transition-all duration-500 cursor-pointer"
+            >
+              <div className="flex items-center gap-6 z-10">
+                <div className="w-32 h-32 rounded-xl overflow-hidden border border-ancient-gold/30 bg-black shadow-inner shadow-ancient-gold/10 relative flex-shrink-0">
+                  <img 
+                    src={affiliateProduct?.image || settings.shopeeProductImage} 
+                    alt={lang === 'vn' ? affiliateProduct?.nameVn : affiliateProduct?.nameEn} 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+                <div className="text-left max-w-md">
+                  <span className="text-xs text-ancient-gold uppercase tracking-widest font-bold block mb-2 flex items-center gap-1 animate-pulse">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    {lang === 'vn' ? 'Góc May Mắn & Bình An' : 'Lucky Corner & Serenity'}
+                  </span>
+                  <p className="text-lg font-bold text-slate-100 group-hover:text-white transition-colors leading-snug">
+                    {lang === 'vn' ? affiliateProduct?.nameVn : affiliateProduct?.nameEn}
+                  </p>
+                  <p className="text-xs text-slate-400 mt-2 font-medium">
+                    {lang === 'vn' ? '✧ Năng lượng tích cực đang chờ đón bạn ✧' : '✧ Positive energy awaits you ✧'}
+                  </p>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-gradient-to-r from-ancient-gold via-amber-500 to-orange-500 rounded-xl text-slate-950 text-sm font-bold whitespace-nowrap z-10 shadow-lg group-hover:shadow-ancient-gold/30 transition-all duration-500 transform group-hover:translate-x-1">
+                {lang === 'vn' ? 'Đón Nhận Ngay' : 'Claim Now'}
+              </div>
+              {/* Background gradient effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              {/* Decorative glowing circles */}
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-ancient-gold/10 rounded-full blur-3xl opacity-50 group-hover:opacity-80 transition-opacity" />
+            </a>
           </div>
 
           {/* Mobile-only Donate Button */}
@@ -157,3 +192,4 @@ export default function Home() {
 }
 
 // @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Enhanced Copyright text visibility | Tag: #ui #legal
+// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive design for mobile (viewport & lazy-loading) | Tag: #performance

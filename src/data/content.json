@@ -1,9 +1,45 @@
 {
+  "_AGENT_MODIFIED": "2026-04-28T20:05:00Z | Agent 3 & 4 | Reason: Rewrote affiliate product names to evoke luck and blend with oracle vibe | Tag: #marketing",
   "settings": {
     "adBottomUrl": "https://dummyimage.com/728x90/0f172a/7c3aed.png&text=ADVERTISEMENT+SPACE",
     "donateMomoUrl": "",
-    "donatePaypalUrl": "https://paypal.me/"
+    "donatePaypalUrl": "https://paypal.me/",
+    "shopeeAffiliateUrl": "https://s.shopee.vn/qfurU46sv",
+    "shopeeProductImage": "https://down-vn.img.susercontent.com/file/sg-11134201-8262z-mjkxxhnepjb567",
+    "shopeeProductName": "Vòng Tay Đá Thạch Anh Tím Năng Lượng Tâm Linh"
   },
+  "affiliateProducts": [
+    {
+      "nameVn": "Ốp Lưng Cỏ 4 Lá: Bảo Hộ Năng Lượng, Đẩy Lùi Vận Đen",
+      "nameEn": "4-Leaf Clover Phone Case: Energy Shield",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-8262z-mjkxxhnepjb567",
+      "url": "https://s.shopee.vn/qfurU46sv"
+    },
+    {
+      "nameVn": "Dây Chuyền Mỏ Neo: Giữ Tâm Vững Vàng, Neo Đậu Phúc Khí",
+      "nameEn": "Anchor Necklace: Ground Your Mind, Keep Your Luck",
+      "image": "https://down-vn.img.susercontent.com/file/155b969d5a9fe63e7b6a036864f73243",
+      "url": "https://s.shopee.vn/1Vvbf4H1NP"
+    },
+    {
+      "nameVn": "Lắc Tay Cỏ Bốn Lá: Thu Hút Vận May, Kích Hoạt Tài Lộc",
+      "nameEn": "Clover Bracelet: Attract Luck, Activate Wealth",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11110105-6v8h3-melaq1m60su95d_cover",
+      "url": "https://s.shopee.vn/AUqQNpEd9D"
+    },
+    {
+      "nameVn": "Vòng Nhật Nguyệt: Cân Bằng Khí Trường, Kết Duyên Lành",
+      "nameEn": "Sun & Moon Bracelet: Balance Energy, Find True Love",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rd3u-m77jjnbjgnhy44",
+      "url": "https://s.shopee.vn/70GYDgJ6P1"
+    },
+    {
+      "nameVn": "Ghim Cài Hoa May Mắn: Điểm Xuyết Sự Khởi Đầu Thuận Lợi",
+      "nameEn": "Lucky Flower Brooch: Adorn New Beginnings",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-81zu8-mmsodivwm0i085",
+      "url": "https://s.shopee.vn/2LUifYpomm"
+    }
+  ],
   "cards": [
     { "nameEn": "Rider", "nameVn": "Kỵ Sĩ", "descriptionEn": "News, messages, a visitor, a young active person.", "descriptionVn": "Tin tức, thông điệp, vị khách ghé thăm, một người năng động.", "adviceEn": "Be open to receiving news and acting on it quickly.", "adviceVn": "Hãy sẵn sàng nhận tin tức và hành động một cách quyết đoán.", "imageUrl": "/images/cards/card_rider.png" },
     { "nameEn": "Clover", "nameVn": "Cỏ Ba Lá", "descriptionEn": "Luck, small opportunities, joy, something positive but temporary.", "descriptionVn": "May mắn nhỏ nhoi, cơ hội bất ngờ, niềm vui ngắn ngủi.", "adviceEn": "Take a small risk and enjoy the fleeting moments of luck.", "adviceVn": "Hãy thử nắm bắt chút vận may ngắn ngủi này, đừng đặt cược quá lớn.", "imageUrl": "/images/cards/card_clover.png" },

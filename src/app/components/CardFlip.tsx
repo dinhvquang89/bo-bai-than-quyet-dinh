@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, Sun, Infinity, Sparkles } from 'lucide-react';
+import { Share2, Sun, Infinity, Sparkles, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import contentDataLenormand from '../../data/content.json';
 import contentDataAI from '../../data/content_oracle.json';
+import AdRewardModal from './AdRewardModal';
 
 
 
@@ -37,10 +38,12 @@ export default function CardFlip() {
   const [loading, setLoading] = useState(false);
   const [drawsLeft, setDrawsLeft] = useState(FREE_PER_DAY);
   const [showAdPrompt, setShowAdPrompt] = useState(false);
+  const [showAdModal, setShowAdModal] = useState(false);
 
   // Deck Selection State (thay thế A/B random)
   const [selectedDeck, setSelectedDeck] = useState<'lenormand' | 'oracle'>('lenormand');
   const [userId, setUserId] = useState<string>("");
+  const [showShareModal, setShowShareModal] = useState(false);
 
   // Khởi tạo: Load lượt rút, deck đã chọn, userId
   React.useEffect(() => {
@@ -108,16 +111,17 @@ export default function CardFlip() {
     trackEvent('DECK_SELECTED', deck, userId);
   };
 
-  // Hàm xem quảng cáo → thưởng +AD_REWARD lượt
+  // Hàm xem quảng cáo → hiển thị Modal
   const handleWatchAd = () => {
-    // TODO: Thay bằng SDK quảng cáo thật (Google AdSense Rewarded, etc.)
-    alert(lang === 'vn'
-      ? `🎬 Giả lập xem quảng cáo 15s... Bạn nhận được +${AD_REWARD} lượt rút!`
-      : `🎬 Simulating 15s ad... You earned +${AD_REWARD} draws!`);
+    setShowAdModal(true);
+    setShowAdPrompt(false);
+  };
+
+  const handleAdReward = () => {
     const newDraws = drawsLeft + AD_REWARD;
     setDrawsLeft(newDraws);
     localStorage.setItem(DRAW_KEY, String(newDraws));
-    setShowAdPrompt(false);
+    setShowAdModal(false);
   };
 
   const drawCard = () => {
@@ -196,10 +200,30 @@ export default function CardFlip() {
      else if (negativeCardsRef.includes(cardData.nameEn)) cardType = 'negative';
   }
 
-  const handleShare = () => {
-    // Agent 5: Track share kèm deck đang dùng
+  const handleShare = async () => {
     trackEvent('SHARE_CLICK', selectedDeck, userId);
-    alert(lang === 'vn' ? "Đã chia sẻ lên Story!" : "Shared to Story!");
+    
+    const shareText = lang === 'vn' 
+      ? `✨ Mình vừa nhận được Thông Điệp Vũ Trụ: "${cardData?.nameVn}". Hãy cùng khám phá thông điệp dành cho bạn tại:`
+      : `✨ I just received a Celestial Message: "${cardData?.nameEn}". Discover your message at:`;
+    const shareUrl = "https://karo.vn";
+
+    // Ưu tiên Web Share API (Mobile Safari/Chrome)
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Celestial Whispers',
+          text: shareText,
+          url: shareUrl,
+        });
+        return;
+      } catch (err) {
+        console.log('Native share failed or cancelled');
+      }
+    }
+    
+    // Fallback: Hiện Modal trên Desktop
+    setShowShareModal(true);
   };
 
   return (
@@ -209,7 +233,7 @@ export default function CardFlip() {
           [Agent 1 — UI Task] TAB CHỌN BỘ BÀI
           Thiết kế: 2 tab bo tròn, nổi bật linh hồn từng bộ.
           ═══════════════════════════════════════════════════════ */}
-      <div className="flex items-center gap-4 p-1.5 bg-slate-900/90 border border-ancient-gold/20 rounded-full backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.9)] z-30 ring-1 ring-white/5">
+      <div className="flex items-center gap-4 p-1.5 bg-slate-900/90 border border-ancient-gold/20 rounded-full md:backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.9)] z-30 ring-1 ring-white/5">
         <button
           onClick={() => handleSelectDeck('lenormand')}
           className={`group flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm transition-all duration-700 relative overflow-hidden ${
@@ -309,6 +333,8 @@ export default function CardFlip() {
                      <img 
                        src={cardData.imageUrl} 
                        alt={cardData.nameEn} 
+                       loading="lazy"
+                       decoding="async"
                        className="w-full h-full object-cover opacity-80 transition-opacity duration-700"
                      />
                    ) : (
@@ -320,7 +346,7 @@ export default function CardFlip() {
                 </div>
 
                 {/* Cột Phải: Nội dung văn bản (70% trên Mobile, 50% trên PC) */}
-                <div className="w-full h-[70%] md:h-full md:w-1/2 flex flex-col items-center text-center p-5 md:p-8 overflow-y-auto custom-scrollbar bg-mystic-void/60 backdrop-blur-md">
+                <div className="w-full h-[70%] md:h-full md:w-1/2 flex flex-col items-center text-center p-5 md:p-8 overflow-y-auto custom-scrollbar bg-slate-900/95 md:bg-mystic-void/60 md:backdrop-blur-md">
                   <h3 className={`w-full text-2xl md:text-4xl font-extrabold mb-3 md:mb-6 border-b pb-4 font-serif transition-colors ${
                     cardType === 'positive' ? 'text-ancient-gold border-ancient-gold/40' : 
                     cardType === 'negative' ? 'text-royal-nebula-light border-royal-nebula/40' : 
@@ -416,9 +442,10 @@ export default function CardFlip() {
           <div className="flex gap-3 w-full md:w-auto">
             <button 
               onClick={handleShare}
-              className="flex-1 md:flex-none px-6 py-3 border border-royal-nebula-light glass-panel hover:bg-royal-nebula/30 text-ancient-gold-light rounded-full font-bold transition-all text-[10px] md:text-xs uppercase tracking-wide text-center min-w-[120px]"
+              className="flex-1 md:flex-none px-6 py-3 border border-royal-nebula-light glass-panel hover:bg-royal-nebula/30 text-ancient-gold-light rounded-full font-bold transition-all text-[10px] md:text-xs uppercase tracking-wide text-center min-w-[120px] flex items-center justify-center gap-2"
             >
-              {lang === 'vn' ? '🌟 Chia Sẻ' : '🌟 Share'}
+              <Share2 className="w-3.5 h-3.5" />
+              {lang === 'vn' ? 'Chia Sẻ' : 'Share'}
             </button>
             <button 
               onClick={drawCard}
@@ -429,12 +456,107 @@ export default function CardFlip() {
           </div>
         </motion.div>
       )}
+
+      {/* ═══════════════════════════════════════════════════════
+          SHARE MODAL (DESKTOP FALLBACK)
+          ═══════════════════════════════════════════════════════ */}
+      <AnimatePresence>
+        {showShareModal && (
+          <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-slate-900 border border-white/10 p-8 rounded-3xl max-w-sm w-full relative shadow-[0_0_50px_rgba(0,0,0,0.5)]"
+            >
+              <button onClick={() => setShowShareModal(false)} className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <X className="w-6 h-6" />
+              </button>
+              
+              <h3 className="text-xl font-mystic font-bold text-ancient-gold text-center mb-6 tracking-widest uppercase">
+                {lang === 'vn' ? 'Lan tỏa thông điệp' : 'Share the message'}
+              </h3>
+
+              <div className="grid grid-cols-2 gap-4">
+                {/* Facebook */}
+                <button 
+                  onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=https://karo.vn`, '_blank')}
+                  className="flex flex-col items-center gap-2 p-4 bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/20 rounded-2xl transition-all group"
+                >
+                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-200">Facebook</span>
+                </button>
+
+                {/* Zalo */}
+                <button 
+                  onClick={() => window.open(`https://sp.zalo.me/share/base?url=https://karo.vn&text=${encodeURIComponent(lang === 'vn' ? `Thông điệp từ Vũ Trụ dành cho bạn: ${cardData?.nameVn}` : `Celestial Whispers message: ${cardData?.nameEn}`)}`, '_blank')}
+                  className="flex flex-col items-center gap-2 p-4 bg-blue-500/10 hover:bg-blue-500/20 border border-blue-400/20 rounded-2xl transition-all group"
+                >
+                  <div className="w-10 h-10 bg-[#0068FF] rounded-full flex items-center justify-center text-white font-black text-xs group-hover:scale-110 transition-transform">
+                    ZALO
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-200">Zalo</span>
+                </button>
+
+                {/* Instagram (Copy Link) */}
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText("https://karo.vn");
+                    alert(lang === 'vn' ? "Đã copy link! Hãy dán vào Instagram Story của bạn." : "Link copied! Paste it into your Instagram Story.");
+                  }}
+                  className="flex flex-col items-center gap-2 p-4 bg-pink-600/10 hover:bg-pink-600/20 border border-pink-500/20 rounded-2xl transition-all group"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-200">Instagram</span>
+                </button>
+
+                {/* Locket (Copy Link) */}
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText("https://karo.vn");
+                    alert(lang === 'vn' ? "Đã copy link cho Locket!" : "Link copied for Locket!");
+                  }}
+                  className="flex flex-col items-center gap-2 p-4 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-400/20 rounded-2xl transition-all group"
+                >
+                  <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-black group-hover:scale-110 transition-transform">
+                    <Sun className="w-6 h-6" />
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-200">Locket</span>
+                </button>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-white/5">
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText("https://karo.vn");
+                    alert(lang === 'vn' ? "Đã sao chép liên kết!" : "Link copied!");
+                  }}
+                  className="w-full py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-xs font-bold text-slate-300 transition-all"
+                >
+                   {lang === 'vn' ? 'Sao chép liên kết' : 'Copy direct link'}
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Modal Quảng cáo / Tặng lượt */}
+      {showAdModal && (
+        <AdRewardModal 
+          lang={lang} 
+          onClose={() => setShowAdModal(false)} 
+          onReward={handleAdReward} 
+        />
+      )}
     </div>
   );
 }
 
 // @AGENT_MODIFIED: 2026-04-21T17:15:00Z | Agent 4 | Reason: Integrated sound effects for card drawing and outcomes | Tag: #audio #sfx
-
-
-
-
+// @AGENT_MODIFIED: 2026-04-28T16:45:00Z | Agent 4 | Reason: Integrated AdRewardModal component | Tag: #monetization #ui
+// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive layout and performance using min-h-dvh and reduced mobile blur | Tag: #performance

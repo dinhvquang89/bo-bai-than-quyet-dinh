@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${playfair.variable} ${marcellus.variable} font-sans antialiased bg-mystic-void text-white min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} ${playfair.variable} ${marcellus.variable} font-sans antialiased bg-mystic-void text-white min-h-dvh flex flex-col`}>
         <LanguageProvider>
           {children}
           <SpeedInsights />
@@ -32,4 +32,4 @@ export default function RootLayout({
   );
 }
 
-// @AGENT_MODIFIED: 2026-04-20T13:00:00Z | Antigravity | Reason: Updated fonts and layout for Dark Mode | Tag: #ui
+// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized mobile layout using min-h-dvh | Tag: #performance

@@ -1,6 +1,7 @@
 # AGENT DIRECTORY
 
 - **Agent 0**: Commander Agent. Responsible for high-level strategy and coordinating all other agents.
+- **Agent 3**: Marketing & Affiliate Specialist. Responsible for researching market trends, selecting suitable Shopee Affiliate products, and providing affiliate links/content strategies.
 - **Agent 4**: Software Architect. Responsible for core features, DB structure, and monetization logic.
 - **Agent 5**: Data Analyst & Monitoring. Responsible for evaluating A/B testing results and updating `ANALYTICS_REPORT.md`.
 
@@ -11,3 +12,5 @@ Format: `// @AGENT_MODIFIED: [Timestamp] | [Agent_Name] | Reason: [Action_Descri
 Example: `// @AGENT_MODIFIED: 2026-04-20T10:00:00Z | Agent 4 | Reason: Updated schema | Tag: #db`
 If the file language uses different comment syntax (e.g., HTML `<!-- -->`), adjust the syntax accordingly.
 If an external audit system scans a modified file and sees NO such comment matching the edit time, it will automatically assume the USER manually modified it.
+
+// @AGENT_MODIFIED: 2026-04-28T09:52:00Z | Agent 0 | Reason: Added Agent 3 for Marketing and Affiliate management | Tag: #process
