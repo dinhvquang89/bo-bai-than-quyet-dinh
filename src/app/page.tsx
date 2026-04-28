@@ -151,7 +151,13 @@ export default function Home() {
                     <p className="mb-1 text-sm text-slate-300 font-medium">
                       {lang === 'vn' ? 'Chuyển Khoản VietQR / MOMO' : 'VietQR / MOMO Transfer'}
                     </p>
-                    <img src={settings.donateMomoUrl} alt="VietQR Momo" className="w-48 h-48 rounded bg-white p-2 object-cover shadow-inner" />
+                    <div className="w-48 h-48 rounded-xl bg-white overflow-hidden flex items-center justify-center shadow-inner relative">
+                      <img 
+                        src={settings.donateMomoUrl} 
+                        alt="VietQR Momo" 
+                        className="w-full h-full object-cover scale-[1.7] transform transition-transform" 
+                      />
+                    </div>
                     
                     {/* Nút tải ảnh QR trên mobile */}
                     <a 

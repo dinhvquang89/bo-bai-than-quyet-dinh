@@ -39,11 +39,11 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
         </p>
 
         {settings.donateMomoUrl ? (
-          <div className="bg-white p-1.5 rounded-lg mb-3 shadow-inner ring-4 ring-emerald-500/10 transition-transform hover:scale-105">
+          <div className="w-24 h-24 bg-white rounded-lg mb-3 shadow-inner ring-4 ring-emerald-500/10 transition-transform hover:scale-105 overflow-hidden flex items-center justify-center relative">
             <img 
               src={settings.donateMomoUrl} 
-              alt="Momo QR" 
-              className="w-24 h-24 object-cover"
+              alt="VietQR Momo" 
+              className="w-full h-full object-cover scale-[1.7]"
             />
           </div>
         ) : (
@@ -117,3 +117,5 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
 export default Sidebar;
 
 // @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Updated Donate title CTA & Enhanced Legal text visibility | Tag: #ui #legal
+// @AGENT_MODIFIED: 2026-04-28T23:05:00Z | Agent 0 | Reason: Zoomed/Cropped VietQR image using CSS to eliminate pink margin | Tag: #ui
+
