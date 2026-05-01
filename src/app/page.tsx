@@ -73,6 +73,7 @@ export default function Home() {
           <CardFlip />
 
           {/* Advertisement Area (Shopee Affiliate Banner) */}
+          {/* Desktop Banner */}
           <div className="hidden md:block w-full max-w-3xl mt-12 mb-8">
             <a 
               href={affiliateProduct?.url || settings.shopeeAffiliateUrl}
@@ -114,13 +115,50 @@ export default function Home() {
             </a>
           </div>
 
+          {/* Mobile Square Banner */}
+          <div className="md:hidden w-full max-w-[280px] mx-auto mt-10 mb-2">
+            <a 
+              href={affiliateProduct?.url || settings.shopeeAffiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-panel p-5 rounded-[2rem] border border-white/10 bg-slate-900/60 shadow-xl flex flex-col items-center text-center relative overflow-hidden group active:scale-95 transition-all duration-300"
+            >
+              <div className="w-full aspect-square rounded-2xl overflow-hidden border border-ancient-gold/20 bg-black mb-4 relative shadow-lg">
+                <img 
+                  src={affiliateProduct?.image || settings.shopeeProductImage} 
+                  alt={lang === 'vn' ? affiliateProduct?.nameVn : affiliateProduct?.nameEn} 
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </div>
+              
+              <div className="z-10 w-full">
+                <span className="text-[10px] text-ancient-gold uppercase tracking-[0.2em] font-black block mb-1.5 animate-pulse">
+                  {lang === 'vn' ? '✨ Góc May Mắn ✨' : '✨ Lucky Corner ✨'}
+                </span>
+                <p className="text-sm font-bold text-slate-100 mb-4 line-clamp-2 px-1">
+                  {lang === 'vn' ? affiliateProduct?.nameVn : affiliateProduct?.nameEn}
+                </p>
+                <div className="w-full py-2.5 bg-gradient-to-r from-ancient-gold to-orange-500 rounded-xl text-slate-950 text-xs font-black shadow-lg">
+                  {lang === 'vn' ? 'ĐÓN NHẬN NGAY' : 'CLAIM NOW'}
+                </div>
+              </div>
+
+              {/* Decorative effects */}
+              <div className="absolute top-0 right-0 w-20 h-20 bg-ancient-gold/5 rounded-full blur-2xl" />
+              <div className="absolute bottom-0 left-0 w-20 h-20 bg-indigo-500/5 rounded-full blur-2xl" />
+            </a>
+          </div>
+
           {/* Mobile-only Donate Button */}
           <div className="mt-8 md:hidden">
              <button 
               onClick={() => setShowDonate(true)}
               className="flex items-center gap-2 px-6 py-2 text-sm font-bold rounded-full bg-amber-500 hover:bg-amber-600 text-amber-950 transition-all shadow-[0_0_15px_rgba(245,158,11,0.3)] mx-auto animate-pulse"
             >
-              <Heart className="w-4 h-4 fill-current" /> {lang === 'vn' ? 'Ủng hộ dự án' : 'Support Us'}
+              <Heart className="w-4 h-4 fill-current" /> {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa ❤️' : 'Buy us a milk tea ❤️'}
             </button>
           </div>
         </div>
@@ -141,7 +179,7 @@ export default function Home() {
               <X className="w-6 h-6" />
             </button>
             <h3 className="text-2xl font-bold text-amber-500 mb-4 flex items-center gap-2">
-              <Heart className="w-6 h-6" /> {lang === 'vn' ? 'Ủng hộ dự án' : 'Support Us'}
+              <Heart className="w-6 h-6" /> {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa ❤️' : 'Buy us a milk tea ❤️'}
             </h3>
             
             {(settings.donateMomoUrl || settings.donatePaypalUrl) ? (
@@ -217,5 +255,4 @@ export default function Home() {
 // @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 0 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
 // @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 0 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
 // @AGENT_MODIFIED: 2026-04-28T22:45:00Z | Agent 0 | Reason: Added QR Donate download button and filled MOMO QR slot | Tag: #ui #monetization
-
-// @TRIGGER_BUILD: 2026-04-28T21:53:00Z
+// @AGENT_MODIFIED: 2026-05-01T14:52:00Z | Agent 4 | Reason: Updated donate text to 'một ly trà sữa' for friendlier CTA | Tag: #ui #ux
