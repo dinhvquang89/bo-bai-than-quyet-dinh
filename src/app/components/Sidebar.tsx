@@ -34,8 +34,8 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
         
         <p className="text-[11px] text-slate-200 leading-relaxed mb-3 font-medium">
           {lang === 'vn' 
-            ? <>Mọi thông điệp đều hoàn toàn miễn phí. <br /><br /> Nếu Thông Điệp Vũ Trụ giúp bạn có thêm niềm vui hoặc tránh được vận rủi hôm nay, hãy giúp chúng mình một ly trà sữa để duy trì máy chủ nhé. <br /><br /> Chúng mình biết ơn bạn rất nhiều! ❤️</> 
-            : <>All messages are completely free. <br /><br /> If Celestial Whispers helps you have more joy or avoid bad luck today, please help us with a cup of milk tea to maintain the server. <br /><br /> We are very grateful to you! ❤️</>}
+            ? <>Mọi thông điệp đều hoàn toàn miễn phí. <br /><br /> Nếu Thông Điệp Vũ Trụ giúp bạn có thêm niềm vui hoặc tránh được vận rủi hôm nay, hãy giúp chúng mình một tách cà phê để duy trì máy chủ nhé. <br /><br /> Chúng mình biết ơn bạn rất nhiều! ❤️</> 
+            : <>All messages are completely free. <br /><br /> If Celestial Whispers helps you have more joy or avoid bad luck today, please help us with a cup of coffee to maintain the server. <br /><br /> We are very grateful to you! ❤️</>}
         </p>
 
         {settings.donateMomoUrl ? (
@@ -59,7 +59,7 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
           }}
           className="w-full py-2.5 px-4 bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-200 rounded-full text-[10px] font-bold transition-all border border-emerald-500/40 uppercase tracking-widest shadow-lg"
         >
-          {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa ❤️' : 'Buy us a milk tea ❤️'}
+          {lang === 'vn' ? 'Donate by Paypal' : 'Donate by Paypal'}
         </button>
       </div>
 
@@ -118,5 +118,4 @@ export default Sidebar;
 
 // @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Updated Donate title CTA & Enhanced Legal text visibility | Tag: #ui #legal
 // @AGENT_MODIFIED: 2026-04-28T23:05:00Z | Agent 0 | Reason: Zoomed/Cropped VietQR image using CSS to eliminate pink margin | Tag: #ui
-// @AGENT_MODIFIED: 2026-05-01T14:52:00Z | Agent 4 | Reason: Updated donate text to 'một ly trà sữa' | Tag: #ui #ux
 

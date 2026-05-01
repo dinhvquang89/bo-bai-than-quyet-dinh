@@ -158,7 +158,7 @@ export default function Home() {
               onClick={() => setShowDonate(true)}
               className="flex items-center gap-2 px-6 py-2 text-sm font-bold rounded-full bg-amber-500 hover:bg-amber-600 text-amber-950 transition-all shadow-[0_0_15px_rgba(245,158,11,0.3)] mx-auto animate-pulse"
             >
-              <Heart className="w-4 h-4 fill-current" /> {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa ❤️' : 'Buy us a milk tea ❤️'}
+              {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa' : 'Buy us a milk tea'} <Heart className="w-4 h-4 fill-current" />
             </button>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
               <X className="w-6 h-6" />
             </button>
             <h3 className="text-2xl font-bold text-amber-500 mb-4 flex items-center gap-2">
-              <Heart className="w-6 h-6" /> {lang === 'vn' ? 'Ủng hộ dự án một ly trà sữa ❤️' : 'Buy us a milk tea ❤️'}
+              <Heart className="w-6 h-6" /> {lang === 'vn' ? 'Ủng hộ dự án' : 'Support Us'}
             </h3>
             
             {(settings.donateMomoUrl || settings.donatePaypalUrl) ? (
@@ -255,4 +255,4 @@ export default function Home() {
 // @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 0 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
 // @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 0 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
 // @AGENT_MODIFIED: 2026-04-28T22:45:00Z | Agent 0 | Reason: Added QR Donate download button and filled MOMO QR slot | Tag: #ui #monetization
-// @AGENT_MODIFIED: 2026-05-01T14:52:00Z | Agent 4 | Reason: Updated donate text to 'một ly trà sữa' for friendlier CTA | Tag: #ui #ux
+// @AGENT_MODIFIED: 2026-05-01T15:02:00Z | Agent 4 | Reason: Updated mobile support button text to "Ủng hộ dự án một ly trà sữa" | Tag: #ui #ux
