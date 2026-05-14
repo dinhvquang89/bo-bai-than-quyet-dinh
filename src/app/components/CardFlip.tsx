@@ -96,7 +96,7 @@ export default function CardFlip() {
     }
   };
 
-  // Xử lý chọn bộ bài — reset bài đang xem & track Agent 5
+  // Xử lý chọn bộ bài — reset bài đang xem & track Agent 203
   const handleSelectDeck = (deck: 'lenormand' | 'oracle') => {
     if (deck === selectedDeck) return;
     setSelectedDeck(deck);
@@ -107,7 +107,7 @@ export default function CardFlip() {
       document.body.classList.remove('theme-negative', 'theme-positive');
       setTimeout(() => setCardData(null), 500);
     }
-    // Agent 5: Track sự kiện chọn bộ bài
+    // Agent 203: Track sự kiện chọn bộ bài
     trackEvent('DECK_SELECTED', deck, userId);
   };
 
@@ -155,7 +155,7 @@ export default function CardFlip() {
       setCardData(randomCard);
       setIsFlipped(true);
       setLoading(false);
-      // Agent 5: Track hoàn thành rút bài kèm deck
+      // Agent 203: Track hoàn thành rút bài kèm deck
       trackEvent('DRAW_COMPLETED', selectedDeck, userId);
 
       // Logics đổi nền dựa trên tính chất bài
@@ -230,7 +230,7 @@ export default function CardFlip() {
     <div className="flex flex-col items-center justify-center space-y-3 md:space-y-4 w-full">
 
       {/* ═══════════════════════════════════════════════════════
-          [Agent 1 — UI Task] TAB CHỌN BỘ BÀI
+          [Agent 202 — UI Task] TAB CHỌN BỘ BÀI
           Thiết kế: 2 tab bo tròn, nổi bật linh hồn từng bộ.
           ═══════════════════════════════════════════════════════ */}
       <div className="flex items-center gap-4 p-1.5 bg-slate-900/90 border border-ancient-gold/20 rounded-full md:backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.9)] z-30 ring-1 ring-white/5">
@@ -557,6 +557,6 @@ export default function CardFlip() {
   );
 }
 
-// @AGENT_MODIFIED: 2026-04-21T17:15:00Z | Agent 4 | Reason: Integrated sound effects for card drawing and outcomes | Tag: #audio #sfx
-// @AGENT_MODIFIED: 2026-04-28T16:45:00Z | Agent 4 | Reason: Integrated AdRewardModal component | Tag: #monetization #ui
-// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive layout and performance using min-h-dvh and reduced mobile blur | Tag: #performance
+// @AGENT_MODIFIED: 2026-04-21T17:15:00Z | Agent 202 | Reason: Integrated sound effects for card drawing and outcomes | Tag: #audio #sfx
+// @AGENT_MODIFIED: 2026-04-28T16:45:00Z | Agent 202 | Reason: Integrated AdRewardModal component | Tag: #monetization #ui
+// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 202 | Reason: Optimized responsive layout and performance using min-h-dvh and reduced mobile blur | Tag: #performance

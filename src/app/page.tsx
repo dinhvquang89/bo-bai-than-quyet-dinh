@@ -12,7 +12,7 @@ export default function Home() {
   const [showDonate, setShowDonate] = useState(false);
   const [affiliateProduct, setAffiliateProduct] = useState(contentData.affiliateProducts[0]);
 
-  // Agent 5 Tracking: Daily Pulse for Retention
+  // Agent 203 Tracking: Daily Pulse for Retention
   useEffect(() => {
     const trackPulse = async () => {
       const savedUserId = localStorage.getItem('oracle_user_id');
@@ -250,9 +250,9 @@ export default function Home() {
   );
 }
 
-// @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Enhanced Copyright text visibility | Tag: #ui #legal
-// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 4 | Reason: Optimized responsive design for mobile (viewport & lazy-loading) | Tag: #performance
-// @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 0 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
-// @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 0 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
-// @AGENT_MODIFIED: 2026-04-28T22:45:00Z | Agent 0 | Reason: Added QR Donate download button and filled MOMO QR slot | Tag: #ui #monetization
-// @AGENT_MODIFIED: 2026-05-01T15:02:00Z | Agent 4 | Reason: Updated mobile support button text to "Ủng hộ dự án một ly trà sữa" | Tag: #ui #ux
+// @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 202 | Reason: Enhanced Copyright text visibility | Tag: #ui #legal
+// @AGENT_MODIFIED: 2026-04-28T20:10:00Z | Agent 202 | Reason: Optimized responsive design for mobile (viewport & lazy-loading) | Tag: #performance
+// @AGENT_MODIFIED: 2026-04-28T22:08:00Z | Agent 200 | Reason: Fixed language switcher overlapping title on mobile | Tag: #ui
+// @AGENT_MODIFIED: 2026-04-28T22:15:00Z | Agent 200 | Reason: Optimized mobile layout, removed duplicate disclaimer and merged into footer | Tag: #ui #ux
+// @AGENT_MODIFIED: 2026-04-28T22:45:00Z | Agent 200 | Reason: Added QR Donate download button and filled MOMO QR slot | Tag: #ui #monetization
+// @AGENT_MODIFIED: 2026-05-01T15:02:00Z | Agent 202 | Reason: Updated mobile support button text to "Ủng hộ dự án một ly trà sữa" | Tag: #ui #ux

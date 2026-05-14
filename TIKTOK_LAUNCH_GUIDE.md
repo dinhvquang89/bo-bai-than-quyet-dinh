@@ -1,8 +1,8 @@
-<!-- @AGENT_MODIFIED: 2026-04-30T13:00:00+07:00 | Agent 3 | Reason: Created TikTok launch guide for 30/4 event | Tag: #marketing #tiktok -->
+<!-- @AGENT_MODIFIED: 2026-04-30T13:00:00+07:00 | Agent 201 | Reason: Created TikTok launch guide for 30/4 event | Tag: #marketing #tiktok -->
 
 # 📱 Hướng Dẫn Tốc Chiến: Ra Mắt Kênh TikTok & Video Đầu Tiên (Hoàn thành trong hôm nay)
 
-**Người hướng dẫn:** Agent 3 (Marketing Specialist)
+**Người hướng dẫn:** Agent 201 (Marketing Specialist)
 **Dự án:** karo.vn (Celestial Whispers)
 **Chủ đề Video 1:** Người yêu cũ đòi quay lại đúng dịp 30/4 - 1/5, quay lại hay không?
 

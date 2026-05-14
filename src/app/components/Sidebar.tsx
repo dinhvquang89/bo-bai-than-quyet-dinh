@@ -116,6 +116,6 @@ const Sidebar: React.FC<SidebarProps> = ({ lang, settings, setShowDonate }) => {
 
 export default Sidebar;
 
-// @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 4 | Reason: Updated Donate title CTA & Enhanced Legal text visibility | Tag: #ui #legal
-// @AGENT_MODIFIED: 2026-04-28T23:05:00Z | Agent 0 | Reason: Zoomed/Cropped VietQR image using CSS to eliminate pink margin | Tag: #ui
+// @AGENT_MODIFIED: 2026-04-21T05:54:00Z | Agent 202 | Reason: Updated Donate title CTA & Enhanced Legal text visibility | Tag: #ui #legal
+// @AGENT_MODIFIED: 2026-04-28T23:05:00Z | Agent 200 | Reason: Zoomed/Cropped VietQR image using CSS to eliminate pink margin | Tag: #ui
 

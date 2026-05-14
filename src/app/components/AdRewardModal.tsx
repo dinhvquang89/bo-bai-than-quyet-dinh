@@ -124,4 +124,4 @@ export default function AdRewardModal({ onClose, onReward, lang }: AdRewardModal
   );
 }
 
-// @AGENT_MODIFIED: 2026-04-28T16:45:00Z | Agent 4 | Reason: Created AdRewardModal for simulated ads and Shopee affiliate | Tag: #monetization #ui
+// @AGENT_MODIFIED: 2026-04-28T16:45:00Z | Agent 202 | Reason: Created AdRewardModal for simulated ads and Shopee affiliate | Tag: #monetization #ui

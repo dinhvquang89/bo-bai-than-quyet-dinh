@@ -50,7 +50,7 @@ const tail = `                      "adviceVn":  "Đánh giá lại mục tiêu.
                   }
               ]
 }
-// @AGENT_MODIFIED: 2026-04-22T02:00:00Z | Agent 4 | Reason: Repaired corrupted Vietnamese encoding in content_oracle.json | Tag: #fix #data`;
+// @AGENT_MODIFIED: 2026-04-22T02:00:00Z | Agent 202 | Reason: Repaired corrupted Vietnamese encoding in content_oracle.json | Tag: #fix #data`;
 
 fs.writeFileSync(filePath, head + '\n' + tail, 'utf8');
 console.log('File content_oracle.json has been reconstructed successfully.');

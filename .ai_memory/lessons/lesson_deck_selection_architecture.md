@@ -1,6 +1,6 @@
 # 🃏 DECK SELECTION ARCHITECTURE (Updated: 2026-04-21)
 
-## Quyết định Kiến trúc (Agent 0 - Commander)
+## Quyết định Kiến trúc (Agent 200 - Commander)
 - **Trạng thái trước:** A/B Test ngẫu nhiên (Variant A = Lenormand, Variant B = AI Oracle)
 - **Trạng thái mới:** **User tự chọn bộ bài** (thay vì random assign)
 
@@ -15,7 +15,7 @@
 - **PHẢI** dùng `localStorage['cw_selected_deck']` (giá trị: `'lenormand'` hoặc `'oracle'`) để biết user đang chọn bộ nào.
 - Mặc định khi vào lần đầu: `'lenormand'`
 
-## Agent 5 — Nhiệm vụ Tracking (Thay thế A/B)
+## Agent 203 — Nhiệm vụ Tracking (Thay thế A/B)
 Không còn tracking Variant A/B nữa. Thay bằng:
 - `DECK_SELECTED`: User bấm tab chọn bộ nào (lenormand / oracle)
 - `SHARE_CLICK`: User chia sẻ — cần kèm thêm field `deck` đang dùng

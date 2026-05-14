@@ -44,7 +44,7 @@ async function main() {
   console.log("Xoa du lieu cu...");
   await prisma.card.deleteMany();
   
-  console.log("Bat dau seed 36 la bai Lenormand (Agent 4)...");
+  console.log("Bat dau seed 36 la bai Lenormand (Agent 202)...");
   for (const card of cards) {
     await prisma.card.create({ data: card });
   }
@@ -62,4 +62,4 @@ main()
     await prisma.$disconnect();
   });
 
-// @AGENT_MODIFIED: 2026-04-20T12:40:00Z | Agent 4 | Reason: Updated seed.ts with full 36 Lenormand cards | Tag: #db-seed
+// @AGENT_MODIFIED: 2026-04-20T12:40:00Z | Agent 202 | Reason: Updated seed.ts with full 36 Lenormand cards | Tag: #db-seed

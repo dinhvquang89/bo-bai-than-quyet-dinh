@@ -1,17 +1,18 @@
-<!-- @AGENT_MODIFIED: 2026-04-30T12:30:00+07:00 | Agent 3 | Reason: Clarified monetization channels and main focus | Tag: #marketing #monetization -->
+<!-- @AGENT_MODIFIED: 2026-05-05T09:05:00+07:00 | Agent 201 | Reason: Updated hashtags (#chualanh -> #tinhieuvutru) and strictly enforced Faceless strategy based on user feedback. | Tag: #marketing #branding -->
 
 # 🚀 Kế Hoạch Marketing Đa Kênh Cho karo.vn (Celestial Whispers)
 
-**Người lập kế hoạch:** Agent 3 (Marketing & Affiliate Specialist)
+**Người lập kế hoạch:** Agent 201 (Marketing & Affiliate Specialist)
 **Dự án:** Bộ Bài Thần Quyết Định / Celestial Whispers
-**Mục tiêu chính:** Kéo traffic tự nhiên (organic traffic), xây dựng nhận diện thương hiệu ngách tâm linh/chữa lành, và tối ưu hóa chuyển đổi Affiliate (Shopee Lucky Charms).
+**Mục tiêu chính:** Kéo traffic tự nhiên (organic traffic), xây dựng nhận diện thương hiệu ngách dẫn hướng/tâm linh, và tối ưu hóa chuyển đổi Affiliate (Shopee Lucky Charms).
+**Nguyên tắc vận hành (RAG):** Mọi hoạt động đăng bài phải được ghi chép tại [MARKETING_LOG.md](file:///d:/Antigravity%20projects/bo%20bai%20than%20quyet%20dinh/MARKETING_LOG.md) để tránh trùng lặp và theo dõi hiệu quả.
 
 ---
 
 ## 1. Phân Tích Đối Tượng Mục Tiêu (Target Audience)
 - **Nhân khẩu học:** Gen Z & Millennials (16 - 30 tuổi), chủ yếu là nữ giới.
-- **Sở thích:** Tarot, Oracle, Chiêm tinh (Astrology), Luật hấp dẫn (Law of Attraction), Chữa lành (Healing), Trải nghiệm tâm linh, Thiết kế thẩm mỹ (Aesthetic).
-- **Nỗi đau (Pain points):** Thường xuyên overthinking, gặp khó khăn trong việc đưa ra quyết định (tình cảm, công việc, cuộc sống), cần tìm kiếm sự an ủi và định hướng.
+- **Sở thích:** Tarot, Oracle, Chiêm tinh (Astrology), Luật hấp dẫn (Law of Attraction), Dẫn hướng (Navigation), Trải nghiệm tâm linh, Thiết kế thẩm mỹ (Aesthetic).
+- **Nỗi đau (Pain points):** Thường xuyên overthinking, gặp khó khăn trong việc đưa ra quyết định (tình cảm, công việc, cuộc sống), cần tìm kiếm sự dẫn hướng và định hướng khách quan.
 
 ## 2. Chiến Lược Đa Kênh (Multi-Channel Strategy)
 
@@ -19,12 +20,13 @@
 *TikTok là mỏ vàng cho các nội dung tâm linh, bói toán, và "pick a card".*
 
 - **Concept nội dung:**
-  - **"Thông điệp vũ trụ gửi bạn hôm nay":** Quay màn hình điện thoại trải nghiệm website tĩnh lặng, kết hợp với âm thanh healing của website. Dừng lại ở 1 lá bài và giải nghĩa.
+  - **"Thông điệp vũ trụ gửi bạn hôm nay" (Video):** Quay màn hình điện thoại trải nghiệm website tĩnh lặng, kết hợp với âm thanh huyền bí của website. Dừng lại ở 1 lá bài và nêu tín hiệu dẫn hướng.
+  - **"Lá bài hôm nay" (Photo Mode):** Đăng 1-3 ảnh lá bài chất lượng cao (thẩm mỹ), sử dụng nhạc trending chữa lành. Phù hợp để đăng nhanh hàng ngày.
   - **"Khi bạn không biết chọn gì, hãy để vũ trụ quyết định":** Đoạn video ngắn tình huống phân vân (ví dụ: "Có nên nhắn tin cho ex không?"), sau đó mở web rút bài.
   - **Review website:** Giới thiệu web rút bài Oracle aesthetic nhất Việt Nam (nhấn mạnh yếu tố hình ảnh và âm thanh).
 - **Hành động:** 
   - Gắn link `karo.vn` trên Bio.
-  - Sử dụng các trending hashtag: `#tarotvn`, `#thongdiepvutru`, `#chualanh`, `#oracle`.
+  - Sử dụng các trending hashtag: `#tarotvn`, `#thongdiepvutru`, `#tinhieuvutru`, `#oracle`. (Đã xóa `#chualanh`).
   - Livestream rút bài cho viewer trên TikTok, hướng dẫn họ tự vào web rút bài chi tiết.
 
 ### 📌 Kênh 2: Instagram (Kênh Nhận Diện & Aesthetic)
@@ -42,8 +44,8 @@
 *Tận dụng các hội nhóm có sẵn để thu hút lượng người dùng có nhu cầu cao.*
 
 - **Concept nội dung:**
-  - **Seeding Group:** Đăng bài (ẩn danh hoặc clone) trong các group như: *Cộng đồng Tarot Việt Nam, Chữa Lành, Tâm Lý Học, Mật ngữ 12 Chòm Sao*.
-  - **Nội dung seeding:** "Mình vừa tìm được một chiếc web rút bài Oracle giao diện cực kì đẹp và nhạc siêu chữa lành, miễn phí 100%. Mọi người vào thử xem thông điệp hôm nay là gì nhé: karo.vn"
+  - **Seeding Group:** Đăng bài (ẩn danh hoặc clone) trong các group như: *Cộng đồng Tarot Việt Nam, Tâm Lý Học, Mật ngữ 12 Chòm Sao, Luật Hấp Dẫn*. (Đã loại bỏ nhóm Chữa Lành theo yêu cầu).
+  - **Nội dung seeding:** "Mình vừa tìm được một chiếc web rút bài Oracle giao diện cực kì đẹp và nhạc siêu huyền bí, miễn phí 100%. Mọi người vào thử xem tín hiệu hôm nay là gì nhé: karo.vn"
 - **Hành động:**
   - Lập một Fanpage chính thức để cập nhật tính năng mới và chia sẻ thông điệp bài.
   - Chạy một chút ngân sách Ads (nếu cần) vào các bài post có tương tác tự nhiên tốt.
@@ -70,7 +72,7 @@
 
 ## 3. Lựa Chọn Xây Dựng Thương Hiệu (Lộ Mặt hay Không Lộ Mặt - Faceless?)
 
-Nhiều kênh Tarot/Oracle nổi tiếng **hoàn toàn không lộ mặt (Faceless)** mà vẫn cực kỳ thành công. Đối với định hướng của `karo.vn`, Agent 3 **khuyến nghị bạn bắt đầu theo hướng Faceless (Không lộ mặt)** vì các lý do sau:
+Nhiều kênh Tarot/Oracle nổi tiếng **hoàn toàn không lộ mặt (Faceless)** mà vẫn cực kỳ thành công. Đối với định hướng của `karo.vn`, Agent 201 **khuyến nghị bạn bắt đầu theo hướng Faceless (Không lộ mặt)** vì các lý do sau:
 
 1. **Giữ sự bí ẩn & Tập trung vào lá bài:** Không lộ mặt giúp người xem tập trung 100% vào thông điệp, hình ảnh lá bài tuyệt đẹp và âm thanh chữa lành của website. Sự bí ẩn rất phù hợp với ngách "Thần Quyết Định".
 2. **Giảm áp lực & Dễ sản xuất:** Bạn không cần lo lắng về trang điểm, ánh sáng, máy quay hay biểu cảm khuôn mặt. Chỉ cần quay màn hình, quay tay thao tác chuột/điện thoại, hoặc dùng các footage aesthetic (như cảnh mưa, vũ trụ) kết hợp voice-over.
@@ -104,15 +106,34 @@ Nhiều kênh Tarot/Oracle nổi tiếng **hoàn toàn không lộ mặt (Facele
 *   **Được trả qua đâu:** Chuyển khoản trực tiếp qua Zalo/Fanpage.
 *   **Đánh giá:** Phù hợp khi bạn đã xây dựng được tệp khách hàng trung thành, có fanpage mạnh và có đối tác là Reader thực thụ. Mang lại biên lợi nhuận cao nhất nhưng tốn công sức vận hành.
 
-## 5. Kế Hoạch Hành Động Tháng Đầu Tiên (Actionable Plan)
+## 5. Ma Trận Nội Dung (Content Matrix) - Công thức triển khai hàng ngày
+
+Để không bị bí ý tưởng, nội dung sẽ được phân bổ theo các định dạng sau:
+
+### 🎬 TikTok & Shorts (Video ngắn/Diary)
+*   **Dạng Diary (Nhật ký):** "Hành trình 30 ngày rút bài cùng karo.vn". Quay cảnh rút bài mỗi sáng và ghi lại cảm nhận vào cuối ngày.
+*   **Dạng Trend:** Sử dụng các hiệu ứng (Filter) hoặc âm thanh (Sound) đang hot để lồng ghép việc rút bài Oracle.
+*   **Dạng ASMR:** Chỉ có âm thanh thiên nhiên, tiếng lật bài và text giải nghĩa hiện lên chậm rãi.
+
+### 🖼️ Fanpage & Instagram (Hình ảnh/Education)
+*   **Series "Giải mã lá bài":** Mỗi ngày 1 post giới thiệu chi tiết về 1 trong 58 lá bài (Hình ảnh đẹp + Ý nghĩa sâu xa).
+*   **Quote Aesthetic:** Chụp màn hình thông điệp từ web, chèn vào các background phong cảnh huyền bí để user dễ re-share lên Story.
+*   **Q&A:** Trả lời các thắc mắc của người dùng về cách dùng bài Oracle hoặc cách ra quyết định.
+
+### 👤 Profile Cá Nhân (Storytelling/Trust)
+*   **Case Study:** Chia sẻ những câu chuyện thực tế khi dùng bài Oracle để giải quyết vấn đề (Ví dụ: Tìm lại đồ thất lạc, quyết định nhảy việc...).
+*   **Gieo duyên:** Đăng bài rút hộ bài cho mọi người trong danh sách bạn bè để kéo traffic về link web trên Bio.
+
+### 👥 Facebook Groups (Seeding/Engagement)
+*   **Review khách quan:** Bài viết giới thiệu web dưới dạng một "phát hiện thú vị" cho cộng đồng.
+*   **Minigame:** "Chọn tụ bài và nhận thông điệp" - dẫn link về website để xem kết quả chi tiết.
+
+## 6. Kế Hoạch Hành Động Tháng Đầu Tiên (Actionable Plan)
 
 | Tuần | Nền tảng | Hành động cụ thể |
 |---|---|---|
 | **Tuần 1** | TikTok & IG | Lập kênh, chuẩn hóa Bio, thiết kế avatar/cover. Đăng 3 video "Giới thiệu web karo.vn" và "Thông điệp vũ trụ". |
 | **Tuần 2** | FB Groups | Lọc list 20 group tâm linh. Lên kịch bản seeding và thực hiện đăng bài mồi (2-3 bài/group/tuần). |
 | **Tuần 3** | TikTok & Shopee | Ra mắt chuỗi video "Pick a card" hàng ngày. Cập nhật và tối ưu danh sách Affiliate links từ Shopee vào website. |
-| **Tuần 4** | Phân tích | Xem lại `ANALYTICS_REPORT.md` (Phối hợp với Agent 5) để đánh giá nguồn traffic nào hiệu quả nhất và CTR của Affiliate. |
+| **Tuần 4** | Phân tích | Xem lại `ANALYTICS_REPORT.md` (Phối hợp với Agent 203) để đánh giá nguồn traffic nào hiệu quả nhất và CTR của Affiliate. |
 
----
-**💡 Đề xuất tiếp theo từ Agent 3:** 
-Bạn có muốn tôi bắt tay vào viết ngay **3 kịch bản quay video TikTok/Reels** cho tuần đầu tiên, hoặc cung cấp **danh sách 10 sản phẩm Shopee Affiliate (Lucky Charms)** tối ưu nhất cho giao diện web hiện tại không?
